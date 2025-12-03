@@ -262,7 +262,7 @@ When working in this repository:
 
 ## Related Repositories
 
-- **repo-standards** - Repository compliance checking framework that uses GitHub Apps
+- **github-repo-standards** - Repository compliance checking framework that uses GitHub Apps
 
 ## Version History
 
