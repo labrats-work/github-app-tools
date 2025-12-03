@@ -1,0 +1,31 @@
+name: Bug Report
+description: Report a bug in the GitHub App creation tools
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: dropdown
+    id: component
+    attributes:
+      label: Component
+      options:
+        - create-app.sh script
+        - exchange-code.sh script
+        - Manifest examples
+        - Documentation
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Bug Description
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce
+    validations:
+      required: true

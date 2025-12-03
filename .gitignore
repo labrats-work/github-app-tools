@@ -1,0 +1,22 @@
+# GitHub App credentials (NEVER COMMIT THESE!)
+*.pem
+*.p12
+private-key*.txt
+github-app-credentials.txt
+github-app-private-key.pem
+
+# Temporary files
+*.tmp
+*.swp
+*.swo
+*~
+/tmp/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.iml

@@ -1,0 +1,47 @@
+name: Validate
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Check script syntax
+        run: |
+          bash -n create-app.sh
+          bash -n exchange-code.sh
+
+      - name: Validate manifest examples
+        run: |
+          for manifest in examples/*.json; do
+            if [ -f "$manifest" ]; then
+              echo "Validating $manifest"
+              jq empty "$manifest" || exit 1
+            fi
+          done
+
+      - name: Check required files
+        run: |
+          required_files=(
+            "README.md"
+            "LICENSE"
+            "CLAUDE.md"
+            "create-app.sh"
+            "exchange-code.sh"
+          )
+          for file in "${required_files[@]}"; do
+            if [ -f "$file" ]; then
+              echo "✓ $file exists"
+            else
+              echo "✗ $file missing"
+              exit 1
+            fi
+          done

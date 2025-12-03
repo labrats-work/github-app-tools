@@ -1,0 +1,11 @@
+# Compliance Configuration
+# List of check IDs to disable
+disabled_checks:
+  - COMP-013  # MkDocs not needed
+
+# Minimum score percentage to trigger issue creation (default: 50)
+min_score_for_issue: 50
+
+# Notes
+notes: |
+  Simple tool - full documentation site not warranted.

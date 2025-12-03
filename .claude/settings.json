@@ -1,0 +1,7 @@
+{
+  "projectInfo": {
+    "name": "my-gh-apps",
+    "description": "GitHub App creation and management tools",
+    "type": "automation"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "My-Repos Compliance Checker",
+  "url": "https://github.com/tomp736/my-repos",
+  "description": "Automated compliance checking for all my-* repositories. Clones repos, runs checks, generates reports, and creates issues for critical failures.",
+  "hook_attributes": {
+    "url": "https://example.com/webhook"
+  },
+  "redirect_url": "https://github.com/tomp736/my-repos",
+  "public": false,
+  "default_permissions": {
+    "contents": "read",
+    "issues": "write",
+    "metadata": "read"
+  },
+  "default_events": []
+}
