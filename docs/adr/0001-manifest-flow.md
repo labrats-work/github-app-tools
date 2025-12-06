@@ -4,6 +4,8 @@
 
 Accepted
 
+**Date:** 2025-12-03
+
 ## Context
 
 Creating GitHub Apps requires multiple manual steps:
@@ -14,6 +16,17 @@ Creating GitHub Apps requires multiple manual steps:
 - Copy app ID and other credentials
 
 This process is time-consuming, error-prone, and difficult to reproduce.
+
+## Alternatives Considered
+
+### Manual GitHub UI Creation
+Create apps manually through GitHub's web interface. This is simple but time-consuming and error-prone.
+
+### GitHub CLI App Creation
+Use `gh api` commands to create apps programmatically. This requires managing OAuth flows and is more complex than the manifest approach.
+
+### Third-Party Tools
+Use external tools or libraries for app creation. This adds dependencies and may not support all GitHub features.
 
 ## Decision
 

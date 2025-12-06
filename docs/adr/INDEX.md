@@ -2,7 +2,7 @@
 
 ## Index
 
-- [ADR-001: Use GitHub Manifest Flow](ADR-001-manifest-flow.md) - Accepted
+- [ADR-001: Use GitHub Manifest Flow](0001-manifest-flow.md) - Accepted
 
 ## ADR Format
 

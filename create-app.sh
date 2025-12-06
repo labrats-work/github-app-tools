@@ -45,8 +45,10 @@ echo "  Redirect:    $(jq -r '.redirect_url' "$MANIFEST_FILE")"
 echo "  Public:      $(jq -r '.public' "$MANIFEST_FILE")"
 echo ""
 
-# Create temporary HTML file
-TEMP_HTML=$(mktemp /tmp/github-app-XXXXXX.html)
+# Create HTML file in current directory (so the browser can access it)
+# Some systems restrict access to /tmp for sandboxed browsers — create
+# the HTML next to the repo so it's reliably openable by the user's browser.
+TEMP_HTML=$(mktemp ./github-app-XXXXXX.html)
 
 cat > "$TEMP_HTML" <<'EOF'
 <!DOCTYPE html>

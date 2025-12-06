@@ -1,11 +1,11 @@
 {
-  "name": "My-Repos Compliance Checker",
-  "url": "https://github.com/labrats-work/my-repos",
-  "description": "Automated compliance checking for all my-* repositories. Clones repos, runs checks, generates reports, and creates issues for critical failures.",
+  "name": "Labrats-Work Repo Standards",
+  "url": "https://github.com/labrats-work/github-repo-standards",
+  "description": "Automated compliance checking for labrats-work repositories. Clones repos, runs checks, generates reports, and creates issues for critical failures.",
   "hook_attributes": {
     "url": "https://example.com/webhook"
   },
-  "redirect_url": "https://github.com/labrats-work/my-repos",
+  "redirect_url": "https://github.com/labrats-work/github-repo-standards",
   "public": false,
   "default_permissions": {
     "contents": "read",
